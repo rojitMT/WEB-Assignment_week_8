@@ -1,0 +1,36 @@
+### Create Task
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Learn REST API",
+    "description": "Practice Express",
+    "completed": false
+}
+
+
+### Get All Tasks
+GET http://localhost:5000/api/tasks
+
+
+### Get Completed Tasks
+GET http://localhost:5000/api/tasks?completed=true
+
+
+### Get One Task
+GET http://localhost:5000/api/tasks/YOUR_TASK_ID
+
+
+### Update Task
+PUT http://localhost:5000/api/tasks/YOUR_TASK_ID
+Content-Type: application/json
+
+{
+    "title": "Learn REST API",
+    "description": "Completed Express assignment",
+    "completed": true
+}
+
+
+### Delete Task
+DELETE http://localhost:5000/api/tasks/YOUR_TASK_ID
